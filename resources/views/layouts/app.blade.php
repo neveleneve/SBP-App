@@ -9,6 +9,7 @@
     @livewireStyles
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css">
     @stack('customcss')
+    @stack('customjsheader')
 </head>
 
 <body>
