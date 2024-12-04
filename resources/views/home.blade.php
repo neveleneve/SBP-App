@@ -13,7 +13,7 @@
 @endsection
 
 @push('customjs')
-    <script>
+    <script data-navigate-once>
         const refresher = document.getElementById('refresher');
         refresher.addEventListener('ionRefresh', () => {
             setTimeout(() => {
