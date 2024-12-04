@@ -12,7 +12,7 @@
     </ion-content>
 @endsection
 
-@push('customjsheader')
+@push('customjs')
     <script>
         const refresher = document.getElementById('refresher');
         refresher.addEventListener('ionRefresh', () => {
