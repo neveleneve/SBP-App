@@ -1,19 +1,19 @@
 <ion-tabs>
-    <ion-tab-bar slot="bottom">
-        <ion-tab-button href="{{ route('home') }}" {{ Request::is('home*') ? 'selected' : null }} wire:navigate>
-            <ion-icon name="home"></ion-icon>
+    <ion-tab-bar slot="bottom" id="footer">
+        <ion-tab-button href="{{ route('landing') }}">
+            <ion-icon name="home{{ Request::is('/') ? null : '-outline' }}"></ion-icon>
             Home
         </ion-tab-button>
         <ion-tab-button>
-            <ion-icon name="ticket"></ion-icon>
-            Ticket
+            <ion-icon name="bag-outline"></ion-icon>
+            Cart
         </ion-tab-button>
         <ion-tab-button>
-            <ion-icon name="document"></ion-icon>
-            Transaction
+            <ion-icon name="cart-outline"></ion-icon>
+            Order
         </ion-tab-button>
-        <ion-tab-button href="{{ route('profile') }}" {{ Request::is('profile*') ? 'selected' : null }} wire:navigate>
-            <ion-icon name="person"></ion-icon>
+        <ion-tab-button href="{{ route('profile') }}">
+            <ion-icon name="person{{ Request::is('profile*') ? null : '-outline' }}"></ion-icon>
             Profile
         </ion-tab-button>
     </ion-tab-bar>
